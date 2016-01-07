@@ -1,0 +1,12 @@
+prefix=/opt/vc/src/hello_pi
+exec_prefix=${prefix}
+libdir=${exec_prefix}/libs/ilclient
+includedir=${prefix}/libs/ilclient
+
+Name: OpenMAX IL
+Description: Fake OpenMAX with IL client package for RPi
+Version: 10
+Requires: openmax-vc
+Libs: -L${libdir} -lilclient
+Cflags: -I${includedir}
+

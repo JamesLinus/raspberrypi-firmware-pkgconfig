@@ -3,10 +3,10 @@ exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
-Name: EGL
-Description: Fake EGL package for RPi
+Name: OpenVG
+Description: Fake OpenVG package for RPi
 Version: 10
-Requires: bcm_host
-Libs: -L${libdir} -lEGL
+Requires: egl-vc
+Libs: -L${libdir} -lOpenVG
 Cflags: -I${includedir}
 
